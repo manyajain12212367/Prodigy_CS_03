@@ -11,7 +11,7 @@ def check_password_strength(password):
     # checking if the criteria is met
     if all([length_criteria, uppercase_criteria, lowercase_criteria, digit_criteria, special_char_criteria]):
         return "Strong password"
-    elif any([length_criteria, uppercase_criteria, lowercase_criteria, digit_criteria, special_char_criteria]):
+    elif any([length_criteria, digit_criteria, special_char_criteria]):
         return "Moderate password"
     else:
         return "Weak password"
